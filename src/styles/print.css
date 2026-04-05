@@ -1,0 +1,57 @@
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Preservar backgrounds e cores */
+  section,
+  div,
+  header,
+  footer {
+    background-color: inherit !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Evitar quebras de página indesejadas */
+  .project-card,
+  .about-column,
+  section {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Esconder elementos interativos */
+  button {
+    display: none !important;
+  }
+
+  nav {
+    display: none !important;
+  }
+
+  /* Preservar imagens */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Ajustar espaçamentos para impressão */
+  section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  /* Manter cores de texto */
+  h1, h2, h3, h4, h5, h6, p, span, a {
+    color: inherit !important;
+  }
+}
