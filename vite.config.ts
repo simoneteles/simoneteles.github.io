@@ -12,6 +12,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
+    alias: 
     [
       { find: '@', replacement: path.resolve(__dirname, './src') },
       { 
