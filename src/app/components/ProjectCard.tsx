@@ -109,14 +109,14 @@ export function ProjectCard({
         {colors && colors.length > 0 && (
           <div className="mb-12 bg-white/60 rounded-2xl p-6">
             <h4 className="text-lg font-semibold mb-4">Paleta de Cores</h4>
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3 md:gap-4">
               {colors.map((color, idx) => (
                 <div key={idx} className="flex flex-col items-center gap-2">
                   <div
-                    className="w-16 h-16 rounded-lg shadow-md"
+                    className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg shadow-md"
                     style={{ backgroundColor: color }}
                   />
-                  <span className="text-xs text-gray-600 font-mono">{color}</span>
+                  <span className="text-[10px] sm:text-xs text-gray-600 font-mono break-all text-center max-w-[48px] sm:max-w-[56px] md:max-w-[64px]">{color}</span>
                 </div>
               ))}
             </div>
